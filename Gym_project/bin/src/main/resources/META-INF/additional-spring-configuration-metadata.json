@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "flowable.databaseSchemaUpdate",
+  "type": "java.lang.String",
+  "description": "A description for 'flowable.databaseSchemaUpdate'"
+}]}
