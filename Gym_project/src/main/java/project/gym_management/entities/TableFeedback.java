@@ -88,5 +88,14 @@ public class TableFeedback {
 		this.tbluser = tbluser;
 	}
 
-      
+	@Override
+	public String toString() {
+		return "TableFeedback{" +
+				"feed_id=" + feed_id +
+				", feedback='" + feedback + '\'' +
+				", response='" + response + '\'' +
+				", created_timestamp=" + created_timestamp +
+				", tbluser=" + tbluser +
+				'}';
+	}
 }

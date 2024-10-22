@@ -91,6 +91,17 @@ public class TableTrainer {
 	public void setAvatar(String avatar) {
 		this.avatar = avatar;
 	}
-	
 
+	@Override
+	public String toString() {
+		return "TableTrainer{" +
+				"trainer_id=" + trainer_id +
+				", trainer_name='" + trainer_name + '\'' +
+				", avatar='" + avatar + '\'' +
+				", contact='" + contact + '\'' +
+				", address='" + address + '\'' +
+				", salary=" + salary +
+				", join_date=" + join_date +
+				'}';
+	}
 }

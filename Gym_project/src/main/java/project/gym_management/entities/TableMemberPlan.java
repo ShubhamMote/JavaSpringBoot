@@ -62,4 +62,13 @@ public class TableMemberPlan {
 		this.subscription_date = subscription_date;
 	}
 
+	@Override
+	public String toString() {
+		return "TableMemberPlan{" +
+				"memberplan_id=" + memberplan_id +
+				", user_id=" + user_id +
+				", plan_id=" + plan_id +
+				", subscription_date=" + subscription_date +
+				'}';
+	}
 }

@@ -2,6 +2,11 @@ package project.gym_management.controllers;
 
 import java.util.List;
 import java.util.stream.Stream;
+
+import lombok.extern.slf4j.Slf4j;
+import lombok.extern.slf4j.XSlf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -34,7 +39,11 @@ import project.gym_management.services.TableUserService;
 
 @CrossOrigin
 @RestController
+@Slf4j
 public class AdminController {
+
+	//private static final Logger logger =LoggerFactory.getLogger(AdminController.class);
+
 	@Autowired
 	TableFeedbackService feedService;
 	@Autowired
@@ -60,6 +69,7 @@ public class AdminController {
 	public ResponseEntity<?> getAllUsers() {
 		List<TableUser> list = tblUserService.getAllUsers();
 		Stream<Credentials> allusers = list.stream().map(user -> Credentials.allDataTODto(user));
+		log.info("Get all Users : " + list);
 		return Response.success(list);
 	}
 	

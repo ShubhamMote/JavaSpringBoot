@@ -200,4 +200,26 @@ public class TableUser {
 		this.planList = planList;
 	}
 
+	@Override
+	public String toString() {
+		return "TableUser{" +
+				"user_id=" + user_id +
+				", complete_name='" + complete_name + '\'' +
+				", avatar='" + avatar + '\'' +
+				", contact='" + contact + '\'' +
+				", email='" + email + '\'' +
+				", password='" + password + '\'' +
+				", role='" + role + '\'' +
+				", question=" + question +
+				", answer='" + answer + '\'' +
+				", address='" + address + '\'' +
+				", age=" + age +
+				", height=" + height +
+				", weight=" + weight +
+				", gender=" + gender +
+				", joining_date=" + joining_date +
+				", end_of_membership_date=" + end_of_membership_date +
+				", planList=" + planList +
+				'}';
+	}
 }

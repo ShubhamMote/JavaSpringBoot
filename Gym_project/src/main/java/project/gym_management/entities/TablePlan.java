@@ -84,5 +84,17 @@ public class TablePlan {
 	public void setTrainer_name(String trainer_name) {
 		this.trainer_name = trainer_name;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "TablePlan{" +
+				"plan_id=" + plan_id +
+				", membershipPlanName='" + membershipPlanName + '\'' +
+				", duration=" + duration +
+				", start_hour='" + start_hour + '\'' +
+				", end_hour='" + end_hour + '\'' +
+				", price=" + price +
+				", trainer_name='" + trainer_name + '\'' +
+				'}';
+	}
 }

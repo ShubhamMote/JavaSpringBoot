@@ -61,5 +61,17 @@ public class TableDiet {
 	public void setNight(String night) {
 		this.night = night;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "TableDiet{" +
+				"diet_id=" + diet_id +
+				", diet_name='" + diet_name + '\'' +
+				", day='" + day + '\'' +
+				", morning='" + morning + '\'' +
+				", afternoon='" + afternoon + '\'' +
+				", evening='" + evening + '\'' +
+				", night='" + night + '\'' +
+				'}';
+	}
 }

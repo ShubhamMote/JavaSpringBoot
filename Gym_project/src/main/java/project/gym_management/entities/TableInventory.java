@@ -77,6 +77,16 @@ public class TableInventory {
 	public void setPurchase_date(Date purchase_date) {
 		this.purchase_date = purchase_date;
 	}
-	
-	
+
+	@Override
+	public String toString() {
+		return "TableInventory{" +
+				"item_id=" + item_id +
+				", equip_name='" + equip_name + '\'' +
+				", units=" + units +
+				", model='" + model + '\'' +
+				", item_price=" + item_price +
+				", purchase_date=" + purchase_date +
+				'}';
+	}
 }
